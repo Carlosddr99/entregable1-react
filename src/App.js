@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Greeting } from './componentes/Greeting.js';
 import { ShowName } from './componentes/ShowName';
@@ -8,7 +7,7 @@ import { Loading} from './componentes/Loading'
 import { Button } from './componentes/Button';
 import { TextoEtiqueta } from './componentes/TextoEtiqueta';
 import { PasswordBoton } from './componentes/PasswordBoton';
-import { Contador } from './componentes/Contador';
+import  {Contador}  from './componentes/Contador';
 import { BotonesCadena } from './componentes/BotonesCadena';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
       <ShowName></ShowName><br/>
       <ShowDate></ShowDate><br/>
       <ShowMessage></ShowMessage><br/>
-      <Loading mostrar="true"></Loading><br/>
+      <Loading mostrar={true}><Greeting></Greeting></Loading><br/>
       <Button metodo={()=>console.log('holi')}></Button><br/>
       <TextoEtiqueta></TextoEtiqueta><br/>
       <PasswordBoton></PasswordBoton><br/>

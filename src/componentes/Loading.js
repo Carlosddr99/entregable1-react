@@ -6,7 +6,7 @@ export function Loading(props){
 
     return(
         <div>
-        {mostrar ? <ShowMessage></ShowMessage> : "Loading"}
+        {mostrar ? props.children : "Loading"}
         </div>
     )
 }
